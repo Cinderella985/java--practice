@@ -5,6 +5,6 @@ import java.util.Scanner;
 		System.out.print("Enter a value for feet" );
 	double feet = input.nextDouble();
 	double meters = feet * 0.305;
-System.out.print(" Feet " + feet + " is " + meters + "meters");
+System.out.print(" Feet " + feet + " is " + meters + " meters ");
 	}
  }
