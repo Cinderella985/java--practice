@@ -8,7 +8,7 @@ class Volume {
 	double length = input.nextDouble();
 	double area = radius * radius * 3.14159;
 	double volume = area * length;
-	System.out.print("The area is" + area + "The volume is" + volume);
+	System.out.print(" The area is " + area + " The volume is " + volume);
 	}
  }
 
