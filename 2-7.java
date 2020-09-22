@@ -5,10 +5,11 @@ public class Minutes {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the number of minutes:" );
-		long minutes = input.nextInt();
+		long minutes = input.nextLong();
+		long days = minutes / ( 24 * 60 );
 		long years = days / 365;
-		long days = minutes % 365;
-		System.out.println( minutes + "minutes is approximately" + years + "and" + days );
+		long day = days % 365;
+		System.out.println( minutes + " minutes is approximately " + years + " years and " + day + " days");
 	}
-
 }
+
