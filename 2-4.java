@@ -6,6 +6,6 @@ import java.util.Scanner;
 		System.out.print("Enter a number in pounds" );
 	double pounds = input.nextDouble();
 	double kilograms = pounds * 0.454;
-	System.out.print( pounds + "pounds is" + kilograms + "kilograms")
+	System.out.print( pounds + " pounds is " + kilograms + " kilograms ")
 	}
  }
