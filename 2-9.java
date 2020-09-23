@@ -4,12 +4,12 @@ public class Acceleration {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter v0,v1,and t: ");
-			double v0 = input.nextDouble();
-			double v1 = input.nextDouble();
-			double t = input.nextDouble();
-			double averageAcceleration = ( v1 - v0 ) / t;
-			System.out.println(" The average acceleration is " + averageAcceleration);
-		}
-
+		double v0 = input.nextDouble();
+		double v1 = input.nextDouble();
+		double t = input.nextDouble();
+		double averageAcceleration = ( v1 - v0 ) / t;
+		System.out.println(" The average acceleration is " + averageAcceleration);
 	}
+
+}
 
