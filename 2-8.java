@@ -12,7 +12,7 @@ public class Gmt {
 		long totalHours = totalMinutes / 60;
 		long currentSecond = totalSeconds % 60;
 		long currentMinutes = totalMinutes % 60;
-		long currentHours = ( timeZoneOffset + totalHours ) % 24;
+		long currentHours = (timeZoneOffset + totalHours) % 24;
 		System.out.println("The current time is " + currentHours + ":" + currentMinutes + ":" + currentSecond);
 	}
 }
