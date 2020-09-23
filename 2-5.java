@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
- class Pounds {
+class Pounds {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the subtotal and a gratuity" );
