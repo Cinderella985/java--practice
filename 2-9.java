@@ -7,7 +7,7 @@ public class Acceleration {
 		double v0 = input.nextDouble();
 		double v1 = input.nextDouble();
 		double t = input.nextDouble();
-		double averageAcceleration = ( v1 - v0 ) / t;
+		double averageAcceleration = (v1 - v0) / t;
 		System.out.println(" The average acceleration is " + averageAcceleration);
 	}
 
