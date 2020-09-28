@@ -9,7 +9,7 @@ public class Ds {
 		System.out.print("Enter the first 9 digits of an ISBN as integer : ");
 		int x = input.nextInt();
 		int d1 = x / 100000000;
-		int d2 = x / 10000000;
+		int d2 = x / 10000000 % 10;
 		int d3 = x / 1000000 % 10;
 		int d4 = x / 100000 % 10;
 		int d5 = x / 10000 % 10;
@@ -21,9 +21,9 @@ public class Ds {
  % 11;	
 		
 		if (d10 == 10)
-			System.out.print("The ISBN-10 number is" + d1+""+d2+""+d3+""+d4+""+d5+""+d6+""+d7+""+d8+""+d9+"X");
+			System.out.print("The ISBN-10 number is" + d1+" "+d2+" "+d3+" "+d4+" "+d5+" "+d6+" "+d7+" "+d8+" "+d9+"X");
 		else{
-			System.out.print("The ISBN-10 number is" + d1+""+d2+""+d3+""+d4+""+d5+""+d6+""+d7+""+d8+""+d9+""+d10);
+			System.out.print("The ISBN-10 number is" + d1+" "+d2+" "+d3+" "+d4+" "+d5+" "+d6+" "+d7+" "+d8+" "+d9+" "+d10);
 		}
 	}
 }
