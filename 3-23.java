@@ -9,11 +9,10 @@ public class Square {
 		double number1 = input.nextDouble();
 		double number2 = input.nextDouble();
 		
-		if ( number1 - 0 <= 5 && number2 - 0 <= 2.5 )
+		if ( Math.pow(number1 * number1, 0.5) <= 10 / 2 && Math.pow(number2 * number2, 0.5) <= 5.0 / 2)
 			System.out.print("Point (" + number1 + "," + number2 + ") is in the rectangle");
 		else
 			System.out.print("Point (" + number1 + "," + number2 + ") is not in the rectangle");
 	}
 }	
-		
 		
