@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Two {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		//Create a Scanner
 		Scanner input = new Scanner(System.in);
 		
@@ -21,7 +20,7 @@ public class Two {
 		double xDistance = x1 >= x2 ? x1 - x2 : x2 - x1 ;
 		double yDistance = y1 >= y2 ? y1 - y2 : y2 - y1 ;
 		
-		if (xDistance < 0.5 * w1 && yDistance < 0.5 * h1)
+		if (xDistance < 0.5 * w1 - 0.5 * w2 && yDistance < 0.5 * h1 - 0.5 * h2)
 			System.out.print("r2 is inside r1");
 		else if (xDistance <= 0.5 * w1 + 0.5 * w2 && yDistance <= 0.5 * h1 + 0.5 * h2)
 			System.out.print("r2 overlaps r1");
