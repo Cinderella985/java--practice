@@ -8,6 +8,6 @@ public class Yo {
 		String x1 = input.next();
 		
 		System.out.println("The length of " + x1 + " is " + x1.length());
-		System.out.println("The length of " + x1 + " is " + x1.charAt(0));
+		System.out.println("The first character of " + x1 + " is " + x1.charAt(0));
 	}
 }
