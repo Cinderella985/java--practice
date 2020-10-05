@@ -24,7 +24,7 @@ public class Year {
 			System.out.print(x1 + " " + year + " has 28 days");
 		}
 		else if (x1.equals("Apr") || x1.equals("Jun") || x1.equals("Sep") || x1.equals("Nov")) {
-			System.out.print(x1 + " " + year + " has 31 days");
+			System.out.print(x1 + " " + year + " has 30 days");
 		}
 		else {
 			System.out.print(x1 + " is not a correct month name");
