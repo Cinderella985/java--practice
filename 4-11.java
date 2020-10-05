@@ -10,11 +10,11 @@ public class Hex {
 		if(x > 15) {
 			System.out.print(x + " is an invaid input");
 		}
-		else if (0 < x && x < 10 ){
+		else if (0 <= x && x < 10 ){
 			System.out.print("The hex value is " + x);
 		}
 		else {
-			char a = (char)(x - 10 + 64);
+			char a = (char)(x - 10 + 65);
 			System.out.print("The hex value is " + a);
 		}
 	}
