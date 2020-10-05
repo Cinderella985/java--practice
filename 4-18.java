@@ -14,14 +14,14 @@ public class Haha {
 			System.out.print("Mathematics");
 		}
 		else if (x2 == 'C') {
-			System.out.print("Computer");
+			System.out.print("Computer Science");
 		}
 		else if (x2 == 'I') {
 			System.out.print("Information");
 		}
 		else {
 			System.out.print("Invalid input");
-			System.exit(1);
+			System.exit(0);
 		}
 		
 		if (x3 == '1') {
@@ -38,7 +38,7 @@ public class Haha {
 		}
 		else {
 			System.out.print("Invalid input");
-			System.exit(2);
+			System.exit(1);
 		}
 	}
 }
