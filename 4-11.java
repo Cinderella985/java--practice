@@ -7,8 +7,8 @@ public class Hex {
 		System.out.print("Enter a decimal value (0 to 15): ");
 		int x = input.nextInt();
 		
-		if(x > 15) {
-			System.out.print(x + " is an invaid input");
+		if(x > 15 || x < 0) {
+			System.out.print(x + " is an invalid input");
 		}
 		else if (0 <= x && x < 10 ){
 			System.out.print("The hex value is " + x);
