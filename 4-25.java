@@ -8,6 +8,6 @@ public class Number {
 		int x5 = (int)(Math.random() * 10);
 		int x6 = (int)(Math.random() * 10);
 		int x7 = (int)(Math.random() * 10);
-		System.out.print(x1 + "" + x2 + "" + "" + x3 + "" + x4 + "" + x5 + "" + "" + x6 + "" + x7);			
+		System.out.print(" " + x1 + x2 + x3 + x4 + x5 + x6 + x7);			
 	}
 }
