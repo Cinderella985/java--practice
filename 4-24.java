@@ -13,23 +13,21 @@ public class City {
 		System.out.print("Enter the third city: ");
 		String s3 = input.nextLine();
 		
-		if (s1.compareTo(s2) < 0 && s2.compareTo(s3) < 0 && s1.compareTo(s3) < 0) {
-			System.out.print("The three cities in alphabetical order are " + s1 + " "  + s2 + " " + s3);
+		if (s1.compareTo(s2) < 0) {
+			String temp = s1;
+			s1 = s2;
+			s2 = temp;
 		}
-		else if (s1.compareTo(s2) < 0 && s2.compareTo(s3) > 0 && s1.compareTo(s3) < 0) {
-			System.out.print("The three cities in alphabetical order are " + s1 + " " + s3 + " " + s2);
-		}
-		else if (s1.compareTo(s2) > 0 && s2.compareTo(s3) > 0 && s1.compareTo(s3) > 0) {
-			System.out.print("The three cities in alphabetical order are " + s3 + " " + s2 + " " + s1);
-		}
-		else if (s1.compareTo(s2) > 0 && s2.compareTo(s3) < 0 && s1.compareTo(s3) > 0) {
-			System.out.print("The three cities in alphabetical order are " + s2 + " " + s3 + " " + s1);
-		}
-		else if (s1.compareTo(s2) < 0 && s2.compareTo(s3) > 0 && s1.compareTo(s3) > 0) {
-			System.out.print("The three cities in alphabetical order are " + s3 + " " + s1 + " " + s2);
-		}
-		else if (s1.compareTo(s2) > 0 && s2.compareTo(s3) < 0 && s1.compareTo(s3) < 0) {
-			System.out.print("The three cities in alphabetical order are " + s2 + " " + s1 + " " + s3);
-		}
+		if (s2.compareTo(s3) < 0) {
+			String temp1 = s2;
+			s2 = s3;
+			s3 = temp1;
+		}	
+		if (s1.compareTo(s2) < 0) {
+			String temp2 = s1;
+			s1 = s2;
+			s2 = temp2;
+		}	
+		System.out.print("The three cities in alphabetical order are " + s3 + " " + s2 + " " + s1)	;		
 	}
 }
