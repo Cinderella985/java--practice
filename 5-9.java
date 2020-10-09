@@ -8,10 +8,9 @@ public class G {
 		int number1 = input.nextInt();
 			
 		System.out.print("Enter the scores of students: ");
-		int number2,number3,max,max2;
+		int number2,number3,max,number4 = 0;
 		number2 = input.nextInt();
 		max = number2;
-		max2 = number2;
 		number3 = -1;
 			
 		System.out.print("Enter the name of students: ");
@@ -20,7 +19,7 @@ public class G {
 		maxname = name1;
 		secondname = name1;
 			
-		while (number2 != 0 & number3 != 0) {
+		while (number4 < number1 - 2) {
 			System.out.print("Enter the scores of students: ");
 			number2 = input.nextInt();
 			System.out.print("Enter the name of students: ");
@@ -34,16 +33,14 @@ public class G {
 			System.out.print("Enter the name of students: ");
 			name2 = input.next();
 			if (number3 < max && number3 > number2) {
-				max2 = number3;
+				max = number3;
 				secondname = name2;
 			}
+			number4++;
 		}
 		
 		System.out.println(maxname + " gets the highest scores");
 		System.out.println(secondname + " gets the second highest scores");
 	}
 }
-					
-		
-		
-		
+				
