@@ -1,4 +1,4 @@
-public class K {
+class K {
 	public static void main(String[] args) {
 		final int NUMBER_PER_LINE = 8;
 		int count = 0;
@@ -21,7 +21,9 @@ public class K {
 			}
 			else
 				System.out.print(number + " ");
+			}
 		}
-	  }
-    }
+	}
 }
+			
+	  
