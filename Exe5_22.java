@@ -4,13 +4,13 @@ class Exe5_22 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out.print(" Loan Amount: ");
+		System.out.print("Loan Amount: ");
 		double loan = input.nextDouble();
 		
-		System.out.print(" Number of Years: ");
+		System.out.print("Number of Years: ");
 		double year = input.nextDouble();
 		
-		System.out.print(" Annual Interest Rate: ");
+		System.out.print("Annual Interest Rate: ");
 		double rate = input.nextDouble();
 		
 		double monthlyRate = rate / 1200;
@@ -19,9 +19,11 @@ class Exe5_22 {
 		
 		double totalPayment = monthlyPayment * year * 12;
 		
+		System.out.println("\n");
 		System.out.println("Monthly Payment: " + (int)(monthlyPayment * 100)/100.0);
 		System.out.printf("Total Payment: %.2f" ,totalPayment);
 		System.out.println("\n");
+		System.out.println("Payment#" + "        " + "interest" + "        " + "principal" + "       " + "balance");
 		
 		double interest;
 		double principal;
