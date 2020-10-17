@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Triangle1 {
+class Exe5_17 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		 
@@ -16,22 +16,15 @@ public class Triangle1 {
 			for (int column = row ; column >= 0; column--) {
 				for (int y = 0; y < width - 1 - (column + 1) / 10; y++)
 					System.out.print(" ");
-					System.out.print(column + 1);	
+				System.out.print(column + 1);	
 			}
 			for (int column = 1; column < row + 1; column++) {
 				for (int y = 0; y < width - 1 - (column + 1) / 10;y++)
 					System.out.print(" ");
-					System.out.print(column + 1);	
+				System.out.print(column + 1);	
 			}
-		System.out.println();	
+			System.out.println();	
 		}
 	}
 }
-//每一个大行和数字之间的小行都需要考虑空格，不能顾此失彼！		
-		
-			
-		
-	
-	
-	
-	
+
