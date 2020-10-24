@@ -16,7 +16,7 @@ class Exe6_19 {
 		if (area(side1, side2, side3) == 0.0)
 			System.out.print("Invalid input");
 		else
-		System.out.print(area(side1, side2, side3));
+			System.out.print(area(side1, side2, side3));
 	}
 	
 	public static boolean isValid (double side1, double side2, double side3) {
@@ -34,5 +34,4 @@ class Exe6_19 {
 		}
 		return 0;
 	}
-	
 }
