@@ -5,7 +5,7 @@ class Exe6_16 {
 		
 		int year = 2000;
 		while (year <= 2020) {
-			System.out.print("  " + numberOfDaysInAYear(year));
+			System.out.print(numberOfDaysInAYear(year) + "  ");
 			year++;
 		}	
 	}
