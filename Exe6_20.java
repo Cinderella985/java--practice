@@ -7,7 +7,7 @@ class Exe6_20 {
 		System.out.print("Enter a string: ");
 		String s = input.nextLine();
 		
-		System.out.print(countLetters(s));
+		System.out.println("The number of letters is " + countLetters(s));
 	}
 	
 	public static int countLetters(String s) {
