@@ -20,10 +20,10 @@ class Exe6_18 {
 		
 		while (low <= high) {
 			char m = s.charAt(low);
-			if (high > 8 && ((int) m >= 65 && (int)m <= 90) || ((int)m >= 97 && (int)m <= 122) || (int)m >= 48 && (int)m <=57) {
+			if (((int) m >= 65 && (int)m <= 90) || ((int)m >= 97 && (int)m <= 122) || (int)m >= 48 && (int)m <=57) {
 				if ((int)m >= 48 && (int)m <=57) {
 					count++;
-					if(count >= 2)
+					if(high >= 7 && count >= 2)
 						return 0;	
 				}
 			}
