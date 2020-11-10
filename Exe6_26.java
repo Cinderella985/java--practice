@@ -2,7 +2,7 @@ class Exe6_26 {
 	public static void main(String[] args) {
 		final int NUMBER_PER_LINE = 10;
 		final int prime = 100;
-		int count = 1;
+		int count = 0;
 		int number = 2;
 		
 		System.out.println("The first 100 primenumbers are \n");
