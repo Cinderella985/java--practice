@@ -14,7 +14,7 @@ class Exe6_22 {
 		double lastGuess = 1.0;
 		double nextGuess = (lastGuess + n / lastGuess) / 2;
 		
-		while (nextGuess - lastGuess >= 0.0001) {
+		while (Math.abs(nextGuess - lastGuess ) >= 0.0001) {
 			lastGuess = nextGuess;
 			nextGuess = (lastGuess + n / lastGuess) / 2;
 		}
