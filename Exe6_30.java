@@ -4,7 +4,12 @@ class Exe6_30 {
 		int second = (int)((Math.random() * 6) + 1);
 		int sum = first + second;
 		System.out.println("You rolled " + first + " + " + second + " = " + sum);
-		System.out.print(result(sum));
+		
+		if (sum == 4 || sum == 5 || sum == 6 || sum == 8 || sum == 9 || sum == 10) {
+			System.out.println("point is " + sum);
+		}
+		
+		System.out.println(result(sum));
 	}
 	
 	public static String result(int sum) {
@@ -21,14 +26,23 @@ class Exe6_30 {
 				int first1 = (int)((Math.random() * 6) + 1);
 				int second1 = (int)((Math.random() * 6) + 1);
 				sum1 = first1 + second1;
+				String x1 = Integer.toString(first1);
+				String x2 = Integer.toString(second1);
+				
+				if (sum1 == 7) {
+					return "You rolled " + x1 + " + " + x2 +  " = " + sum1 + "\n"
+							+ "You lose";
+				}
+				else if (sum1 == sum) {
+					return "You rolled " + x1 + " + " + x2 +  " = " + sum1 + "\n"
+							+ "You win";
+				}
+				else {
+					return "You rolled " + x1 + " + " + x2 +  " = " + sum1 + "\n"
+							+ "You lose";
+				}
 			}
 			while (sum1 == 7 || sum1 == sum);
-			
-			if (sum1 == 7) {
-				return "You lose";
-			}
-			else
-				return "You win";
 		}
 		return null;
 	}
