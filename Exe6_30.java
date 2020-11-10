@@ -1,4 +1,4 @@
-class Exe6_30 {
+ class Exe6_30 {
 	public static void main(String[] args) {
 		int first = (int)((Math.random() * 6) + 1);
 		int second = (int)((Math.random() * 6) + 1);
@@ -37,13 +37,10 @@ class Exe6_30 {
 					return "You rolled " + x1 + " + " + x2 +  " = " + sum1 + "\n"
 							+ "You win";
 				}
-				else {
-					return "You rolled " + x1 + " + " + x2 +  " = " + sum1 + "\n"
-							+ "You lose";
-				}
 			}
 			while (sum1 == 7 || sum1 == sum);
 		}
-		return null;
+		
+		return result(sum);
 	}
 }
