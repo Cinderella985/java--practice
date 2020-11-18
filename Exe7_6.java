@@ -13,9 +13,6 @@ class Exe7_6 {
 			for (int i = 0; i < count && primeNumber[i] <= Math.sqrt(number1); i++) {
 				if (number1 % primeNumber[i] == 0) {
 					isPrime = false;
-				}
-				else {
-					isPrime = true;
 					break;
 				}
 			}
@@ -24,15 +21,15 @@ class Exe7_6 {
 				primeNumber[count] = number1;
 				count++;
 			}
+			
+			number1++;
+		}
 				
-			if (count % 10 == 0) {
-				System.out.println(number1);
+		for (int i = 0; i < count; i++) {
+			System.out.print(primeNumber[i] + " ");
+			if ((i + 1) % 10 == 0) {
+				System.out.println();
 			}
-			else {
-				System.out.print(number1 + " ");
-			}
-				
-			number1++;		
 		}
 	}
 }
